@@ -1,4 +1,4 @@
-package data_structure
+package linked_list
 
 // 常见的数据结构
 // 链表
