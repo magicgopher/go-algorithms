@@ -2,9 +2,9 @@ package stack
 
 import "testing"
 
-// TestStack_Push 测试 Push 方法，确保元素正确入栈。
-func TestStack_Push(t *testing.T) {
-	s := NewStack()
+// TestStackPush 测试 Push 方法，确保元素正确入栈。
+func TestStackPush(t *testing.T) {
+	s := New()
 	s.Push(1)
 	s.Push(2)
 
@@ -17,18 +17,18 @@ func TestStack_Push(t *testing.T) {
 	}
 }
 
-// TestStack_PopEmpty 测试空栈的 Pop 方法，确保返回正确结果。
-func TestStack_PopEmpty(t *testing.T) {
-	s := NewStack()
+// TestStackPopEmpty 测试空栈的 Pop 方法，确保返回正确结果。
+func TestStackPopEmpty(t *testing.T) {
+	s := New()
 	item, ok := s.Pop()
 	if ok || item != 0 {
 		t.Errorf("期望空栈返回 (0, false)，实际为 %d, %v", item, ok)
 	}
 }
 
-// TestStack_IsEmpty 测试 IsEmpty 方法，确保正确判断栈是否为空。
-func TestStack_IsEmpty(t *testing.T) {
-	s := NewStack()
+// TestStackIsEmpty 测试 IsEmpty 方法，确保正确判断栈是否为空。
+func TestStackIsEmpty(t *testing.T) {
+	s := New()
 	if !s.IsEmpty() {
 		t.Error("期望栈为空")
 	}
@@ -39,9 +39,9 @@ func TestStack_IsEmpty(t *testing.T) {
 	}
 }
 
-// TestStack_Peek 测试 Peek 方法，确保查看栈顶元素不改变栈状态。
-func TestStack_Peek(t *testing.T) {
-	s := NewStack()
+// TestStackPeek 测试 Peek 方法，确保查看栈顶元素不改变栈状态。
+func TestStackPeek(t *testing.T) {
+	s := New()
 	item, ok := s.Peek()
 	if ok || item != 0 {
 		t.Errorf("期望空栈返回 (0, false)，实际为 %d, %v", item, ok)

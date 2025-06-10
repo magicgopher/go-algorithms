@@ -9,8 +9,8 @@ type Stack struct {
 	items []int // 栈中的元素，数据类型是int类型
 }
 
-// NewStack 创建一个新的栈指针
-func NewStack() *Stack {
+// New 创建一个新的栈指针
+func New() *Stack {
 	return &Stack{items: []int{}} // 栈的items是一个空的切片
 }
 
