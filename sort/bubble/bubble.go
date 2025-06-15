@@ -1,8 +1,9 @@
-package sort
+package bubble
 
 // 冒泡排序
+// 属于交换类的排序算法
 
-func BubbleSort(s []int) []int {
+func Sort(s []int) []int {
 	n := len(s)
 	// 创建一个新的切片用于存储排序结果
 	result := make([]int, n)
