@@ -5,7 +5,7 @@ package bubble
 // 冒泡排序是通过连续地比较与交换相邻元素实现排序
 // 过程就像气泡从底部升到顶部一样
 
-func Sort(s []int) []int {
+func Bubble(s []int) []int {
 	n := len(s)
 	// 创建一个新的切片用于存储排序结果
 	result := make([]int, n)
