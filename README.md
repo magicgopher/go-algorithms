@@ -182,23 +182,23 @@ func RecursiveSum(n int) int { // (1) 每次调用，栈上都会分配空间
 ## 数据结构
 
 - 数组（Array）
-- 链表（）
-- 双向链表
+- 链表（Linked List）
+- 双向链表（Doubly Linked List）
 - 跳跃表（Skip List）
-- 堆（）
-- 栈（）
-- 队列（）
-- 哈希表（）
-- 图（）
-- 树（）
+- 堆（Heap）
+- 栈（Stack）
+- 队列（Queue）
+- 哈希表（Hash Table）
+- 图（Graph）
+- 树（Tree）
 - 位图（BitMap）
 - 
 
 ## 算法
 
 - 排序算法
-  - 冒泡排序
-  - 选择排序
-  - 插入排序
-  - 快速排序
-  - 堆排序
+  - 冒泡排序（Bubble Sort）
+  - 选择排序（Selection Sort）
+  - 插入排序（Insertion Sort）
+  - 快速排序（Quick Sort）
+  - 堆排序（Heap Sort）
