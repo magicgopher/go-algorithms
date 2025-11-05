@@ -1,0 +1,62 @@
+package heap
+
+import (
+	"reflect"
+	"testing"
+)
+
+// TestHeapSort 测试 HeapSort 函数的各种边界和典型情况
+func TestHeapSort(t *testing.T) {
+	tests := []struct {
+		name     string // 测试名称
+		input    []int  // 输入数组
+		expected []int  // 期望的排序结果
+	}{
+		{
+			name:     "已排序数组",
+			input:    []int{1, 2, 3, 4, 5},
+			expected: []int{1, 2, 3, 4, 5},
+		},
+		{
+			name:     "逆序数组",
+			input:    []int{5, 4, 3, 2, 1},
+			expected: []int{1, 2, 3, 4, 5},
+		},
+		{
+			name:     "无序数组",
+			input:    []int{3, 1, 4, 1, 5, 9, 2, 6, 5},
+			expected: []int{1, 1, 2, 3, 4, 5, 5, 6, 9},
+		},
+		{
+			name:     "空数组",
+			input:    []int{},
+			expected: []int{},
+		},
+		{
+			name:     "单个元素",
+			input:    []int{42},
+			expected: []int{42},
+		},
+		{
+			name:     "全部重复元素",
+			input:    []int{7, 7, 7, 7},
+			expected: []int{7, 7, 7, 7},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			// 复制输入，避免修改原始测试数据
+			input := make([]int, len(tt.input))
+			copy(input, tt.input)
+
+			// 执行堆排序
+			HeapSort(input)
+
+			// 检查结果是否正确
+			if !reflect.DeepEqual(input, tt.expected) {
+				t.Errorf("HeapSort(%v) = %v; 期望 %v", tt.input, input, tt.expected)
+			}
+		})
+	}
+}
