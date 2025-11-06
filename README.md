@@ -202,3 +202,5 @@ func RecursiveSum(n int) int { // (1) 每次调用，栈上都会分配空间
   - 插入排序（Insertion Sort）
   - 快速排序（Quick Sort）
   - 堆排序（Heap Sort）
+  - 希尔排序（Shell Sort）
+  - 归并排序（Merge Sort）
