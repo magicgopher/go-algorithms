@@ -1,4 +1,4 @@
-package demo05
+package question05
 
 // 暴力查找
 func longestPalindrome1(s string) string {

@@ -1,4 +1,4 @@
-package demo08
+package question08
 
 func myAtoi(s string) int {
 	if len(s) == 0 {

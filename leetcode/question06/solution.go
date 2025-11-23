@@ -1,4 +1,4 @@
-package demo06
+package question06
 
 import "strings"
 

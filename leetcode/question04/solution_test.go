@@ -1,4 +1,4 @@
-package demo04
+package question04
 
 import (
 	"testing"

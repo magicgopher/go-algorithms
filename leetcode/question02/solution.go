@@ -1,4 +1,4 @@
-package demo02
+package question02
 
 type ListNode struct {
 	Val  int

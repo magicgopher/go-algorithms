@@ -1,4 +1,4 @@
-package demo01
+package question01
 
 import (
 	"fmt"

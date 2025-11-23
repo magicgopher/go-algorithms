@@ -1,4 +1,4 @@
-package demo05
+package question05
 
 import (
 	"reflect"
